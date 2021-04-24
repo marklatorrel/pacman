@@ -1,7 +1,7 @@
 var pos = 0;
 const pacArray = [
-  ["./images/PacMan1.png", "./images/PacMan2.png"],
-  ["./images/PacMan3.png", "./images/PacMan4.png"],
+  ["./images/pacman1.png", "./images/pacman2.png"],
+  ["./images/pacman3.png", "./images/pacman4.png"],
 ];
 var direction = 0;
 const pacMen = [];
@@ -23,7 +23,7 @@ function makePac() {
   let game = document.getElementById("game");
   let newimg = document.createElement("img");
   newimg.style.position = "absolute";
-  newimg.src = "./images/PacMan1.png";
+  newimg.src = "./images/pacman1.png";
   newimg.width = 100;
   newimg.style.left = position.x;
   newimg.style.top = position.y;
@@ -58,16 +58,16 @@ function eatAnimation() {
   //This is a function that makes the pacman open and close its mouth 
   pacMen.forEach((item) => {
     if (item.mouth === "open" && item.focus === "right") {
-      item.newimg.src = "./images/PacMan2.png";
+      item.newimg.src = "./images/pacman2.png";
       item.mouth = "close";
     } else if (item.mouth === "close" && item.focus === "right") {
-      item.newimg.src = "./images/PacMan1.png";
+      item.newimg.src = "./images/pacman1.png";
       item.mouth = "open";
     } else if (item.mouth === "close" && item.focus === "left") {
-      item.newimg.src = "./images/PacMan3.png";
+      item.newimg.src = "./images/pacman3.png";
       item.mouth = "open";
     } else if (item.mouth === "open" && item.focus === "left") {
-      item.newimg.src = "./images/PacMan4.png";
+      item.newimg.src = "./images/pacman4.png";
       item.mouth = "close";
     } 
   });
@@ -90,10 +90,10 @@ console.log(item.focus);
 function checkFocus(item){
   // This is a function that checks which way the pacman is looking
   if (item.focus === "left") {
-    item.newimg.src = "./images/PacMan1.png";
+    item.newimg.src = "./images/pacman1.png";
     item.focus = "right";
   } else  {
-    item.newimg.src = "./images/PacMan3.png";
+    item.newimg.src = "./images/pacman3.png";
     item.focus = "left";
   } 
 }
