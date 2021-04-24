@@ -1,16 +1,21 @@
 # pacman
-This is a PACMAN game!
 
-Name: PACMAN GAME
+##PACMEN EXERCISE
 
-Description: This is a first version of the PACMAN GAME that includes the Pacman identifying the borders and changing direction according to it. It's a first trial from the course Full Stack Web Development with MERN from MITxPro. Almost all the code belongs to them.
+Description of project
+This is a first version of the PACMAN GAME that includes the Pacman identifying the borders and changing direction according to it. I included an animation of the pacman eating.
 
-Installation: You only need to run the index.html code on any web browser.
+How to run
+You only need to clone the repository and run the Index.html code on any web browser.
 
-Usage: Currently there's no input for the user to put in order to change the behavior of the Pacman.
+Roadmap of future
+The next implementation would be changing the pacman from a picture to a creation in CSS itself, that would allow me to change the characteristics of the Pacmen and make it more personalized.
 
-Support: For any questions, pls email mlatorre@pucp.pe or whatsapp me at +51 976616514
+Usage
+The are two buttons, with Add PacMan you should see the pacmen appear in random positions. With Start Game you will see them move.
 
-Roadmap: TODO Fix the webpage width feature.
+Support
+For any questions, pls email mlatorre@pucp.pe or whatsapp me at +51 976616514
 
-License information: This proyect runs after MIT License.
+License information
+This proyect runs after MIT License.
